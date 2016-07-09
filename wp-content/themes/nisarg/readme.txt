@@ -13,7 +13,9 @@ Text Domain: nisarg
 
 == Description ==
 
-Nisarg is a new fully responsive and translation ready theme that allows you to create stunning blogs and websites. Theme is well suited for travel, photography, recipe, design, art, personal and any other creative websites and blogs. The theme is developed using Bootstrap 3 that makes it mobile and tablets friendly.  It has various options in WordPress Customizer to change look of the theme. Theme customizer can be used to add your own header image of flexible height, background image, to set background color, header text color and accent color(Suggest seven different accent colors and supports selection of any accent color from the color picker).  Theme supports eight post formats, such as: Video, Image, Aside, Status, Audio, Quote, Link and Gallery. 
+Nisarg is a new fully responsive and translation ready theme that allows you to create stunning blogs and websites.
+Theme is well suited for travel, photography, recipe, design, art, personal and any other creative websites and blogs.
+ The theme is developed using Bootstrap 3 that makes it mobile and tablets friendly.  It has various options in WordPress Customizer to change look of the theme. Theme customizer can be used to add your own header image of flexible height, background image, to set background color, header text color and accent color(Suggest seven different accent colors and supports selection of any accent color from the color picker).  Theme supports eight post formats, such as: Video, Image, Aside, Status, Audio, Quote, Link and Gallery.
 
 == LICENSES ==
 
