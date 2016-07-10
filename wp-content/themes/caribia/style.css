@@ -11,4 +11,7 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  caribia
 */
+#menu-main-menu{
+    float:right;
+}
 
