@@ -14,3 +14,15 @@ mandag:
 2.resten af footeren(martin)
 3.Widget med billed(uploaded af admin) + facebook integration nederst + et par felter.
 4.Diskutere hvordan post ser ud + overveje hvordan man bedst linker {P:}
+
+
+
+
+
+
+--------------------------------------
+Post styles/setup:
+
+1.Kig på rejsespejder, gode ideer:
+
+
