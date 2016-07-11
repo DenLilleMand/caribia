@@ -1,7 +1,7 @@
 <?php
 
+include_once('widgets/intro.php');
 
-add_action( 'wp_enqueue_scripts', 'caribia_enqueue_styles', 12);
 function caribia_enqueue_styles()
 {
     $parent_style = 'parent-style';
@@ -11,4 +11,15 @@ function caribia_enqueue_styles()
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'));
 }
 
+function caribia_register_widgets() {
+    register_widget('Intro_Widget');
+}
 
+function load_wp_media_files() {
+    wp_enqueue_media();
+}
+
+add_action('wp_enqueue_scripts', 'caribia_enqueue_styles', 12);
+add_action('admin_enqueue_scripts', 'caribia_enqueue_styles');
+add_action('widgets_init', 'caribia_register_widgets');
+add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
