@@ -44,7 +44,7 @@
             <span class="icon-bar"></span> 
           </button> 
           <?php } ?>
-          <a class="navbar-brand" href="<?php echo esc_url( home_url('/'));?>"><?php bloginfo('name')?></a>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg"</img></a>
         </div> 
         
 
