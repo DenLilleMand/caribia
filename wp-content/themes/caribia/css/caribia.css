@@ -1,0 +1,36 @@
+ul#menu-main-menu {
+    float: right;
+}
+#navigation_menu{
+    margin-top: 20px;
+}
+#navigation_menu_logo{
+    padding: 0;
+}
+
+
+#footer_tripseeker_logo{
+    margin-bottom: 50px;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .footer_social_media{
+        margin-top: 56px;
+
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    #navigation_menu_logo{
+        padding-left: 20px;
+    }
+    ul#menu-main-menu {
+        float: left;
+    }
+    }
+
+
+

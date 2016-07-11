@@ -1,0 +1,7 @@
+.*
+
+!.gitignore
+
+wp-config.php
+
+.idea

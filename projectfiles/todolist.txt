@@ -1,0 +1,16 @@
+1. Rykke menu punkter til højre(stadig indenfor container)  DONE
+2. Ændre titel i headeren til deres logo DONE
+3. Fjerne den der hover effekt på teksten i midten af header billedet DONE
+4. Fjerne de blokke ude til højre vi ikke har brug for   
+5. Intro blok : billed - overskrift - beskrivelse - følg facebook
+6. Footer
+
+
+
+
+mandag:
+
+1.push + merge koden
+2.resten af footeren(martin)
+3.Widget med billed(uploaded af admin) + facebook integration nederst + et par felter.
+4.Diskutere hvordan post ser ud + overveje hvordan man bedst linker {P:}
