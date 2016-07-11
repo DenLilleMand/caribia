@@ -11,13 +11,12 @@
  * @uses nisarg_admin_header_style()
  * @uses nisarg_admin_header_image()
  */
-if ( ! function_exists( 'nisarg_custom_header_setup' ) ) :
 function nisarg_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'nisarg_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => 'fff',
-		'width'                  => 1600,
-		'height'                 => 400,
+		'width'                  => 2400,
+		'height'                 => 450,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'nisarg_header_style',
 		'admin-head-callback'    => 'nisarg_admin_header_style',
@@ -51,10 +50,9 @@ function nisarg_custom_header_setup() {
 			'description'   => _x( 'food', 'header image description', 'nisarg' )
 		),		
 	) );
-} endif; // nisarg_custom_header_setup
+}
 add_action( 'after_setup_theme', 'nisarg_custom_header_setup' );
 
-if ( ! function_exists( 'nisarg_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
@@ -76,7 +74,7 @@ function nisarg_header_style() {
 		if ( ! empty( $header_image ) ) :
 			$header_width = get_custom_header()->width;
 			$header_height = get_custom_header()->height;
-			$header_height1 = ($header_height / $header_width * 1600);
+			$header_height1 = ($header_height / $header_width * 2400);
 			$header_height2 = ($header_height / $header_width * 768);
 			$header_height3 = ($header_height / $header_width * 360);
 			
@@ -84,10 +82,10 @@ function nisarg_header_style() {
 				.site-header {
 					background: url(<?php header_image(); ?>) no-repeat scroll top;
 					<?php if($header_height1 > 200){ ?>
-						background-size: 1600px auto;
+						background-size: 2400px auto;
 						height: <?php echo get_custom_header()->height; ?>px;
 					<?php }else{ ?>
-						background-size: 1600px 200px;
+						background-size: 2400px 200px;
 						height: 200px
 					<?php } ?>
 				}
@@ -195,10 +193,7 @@ function nisarg_header_style() {
 	</style>
 	<?php
 }
-endif; // nisarg_header_style
 
-
-if ( ! function_exists( 'nisarg_admin_header_style' ) ) :
 
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
@@ -261,9 +256,6 @@ function nisarg_admin_header_style() {
 	</style>
 <?php
 }
-endif; // nisarg_admin_header_style
-
-if ( ! function_exists( 'nisarg_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
@@ -311,6 +303,5 @@ function nisarg_admin_header_image() {
     </div>
 <?php
 }
-endif; // nisarg_admin_header_image
 
 
