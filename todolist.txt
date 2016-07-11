@@ -1,0 +1,49 @@
+Caribia TODO:
+
+
+1. Firma 
+	Navn: ?
+	Hvad: Custom web udvikling && CMS && Startup offers.
+	Økonomi: Penge bliver gemt.
+	Opgaver:  Tripseeker, Ornhoj, vores hjemmeside
+	Hosting:  black box til udvikling, overveje serveren på arbejde til hosting eller undersøge vms. 
+	Teknologier: 
+		Source control: GIT (github)
+		preprocessors: SASS
+		Continous integration: Jenkins
+		Backend: Node.js
+		Frontend: vanilla
+		Editor: Phpstorm/webstorm
+		Text editor: vim
+		OS: Ubuntu
+		Hosting OS: Ubuntu server
+		Tests: PhantomJS(headless browser) + integration test + unit test(Mocha(test), chai(assert), Sinon(mocking))
+		CSS arkitektur: SMACSS
+	planlægning:
+		vagt skema: 
+			mandag 14-17.30 (status dag)
+			tirsdag 14-19.
+			fredag 17-21.
+			Lørdag åben (13-xx).
+			Søndag 13-21.
+			
+
+
+
+
+
+	Esportshub:
+		-SPillernes selvpromovering
+		-Dota:
+		-LOL:
+		-cs:go:
+		-sc2: Samle en masse replays fra turneringer, læse op på deep/machine learning, dekryptere dataen fra replays, 
+			lave det sådan at man kan give et replay ind som parameter til en applikation, som så giver et svar. og 
+			det kan være om en build order matcher 
+
+
+		Overordnet opgave: Finde ud af hvilke datasæt vi har adgang til i de forskellige spil, finde ud af om data-sættet er for stort og ellers undersøge hvad realistisk kan gøre med det datasæt.  Så hvert spil kommer til at have sine egne apps. 
+
+
+
+		

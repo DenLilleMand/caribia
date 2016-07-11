@@ -1,0 +1,95 @@
+Hello adventurer
+
+If you have to deploy this theme on a new installation we have a few hints:
+
+
+1. I had to change the nisarg themes /inc/custom-header code a little bit(this is important
+    because if you get another version of nisarg in a new installation it will throw a error), this is the code i changed:
+
+//line 13
+function nisarg_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'nisarg_custom_header_args', array(
+		'default-image'          => '',
+		'default-text-color'     => 'fff',
+		'width'                  => 2400,
+		'height'                 => 450,
+		'flex-height'            => true,
+		'wp-head-callback'       => 'nisarg_header_style',
+		'admin-head-callback'    => 'nisarg_admin_header_style',
+		'admin-preview-callback' => 'nisarg_admin_header_image',
+	) ) );
+
+
+	/*
+	 * Default custom headers packaged with the theme.
+	 * %s is a placeholder for the theme template directory URI.
+	 */
+	register_default_headers( array(
+		'mountains' => array(
+			'url'           => '%s/images/headers/mountains.png',
+			'thumbnail_url' => '%s/images/headers/mountains_thumbnail.png',
+			'description'   => _x( 'food', 'header image description', 'nisarg' )
+		),
+		'skyline' => array(
+			'url'           => '%s/images/headers/skyline.png',
+			'thumbnail_url' => '%s/images/headers/skyline_thumbnail.png',
+			'description'   => _x( 'buildings', 'header image description', 'nisarg' )
+		),
+		'sea' => array(
+			'url'           => '%s/images/headers/sea.png',
+			'thumbnail_url' => '%s/images/headers/sea_thumbnail.png',
+			'description'   => _x( 'Wood', 'header image description', 'nisarg' )
+		),
+		'food' => array(
+			'url'           => '%s/images/headers/food.png',
+			'thumbnail_url' => '%s/images/headers/food_thumbnail.png',
+			'description'   => _x( 'food', 'header image description', 'nisarg' )
+		),
+	) );
+}
+//line 54
+
+
+//to:
+
+if ( ! function_exists( 'nisarg_custom_header_setup' ) ) :
+function nisarg_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'nisarg_custom_header_args', array(
+		'default-image'          => '',
+		'default-text-color'     => 'fff',
+		'width'                  => 1600,
+		'height'                 => 400,
+		'flex-height'            => true,
+		'wp-head-callback'       => 'nisarg_header_style',
+		'admin-head-callback'    => 'nisarg_admin_header_style',
+		'admin-preview-callback' => 'nisarg_admin_header_image',
+	) ) );
+
+
+	/*
+	 * Default custom headers packaged with the theme.
+	 * %s is a placeholder for the theme template directory URI.
+	 */
+	register_default_headers( array(
+		'mountains' => array(
+			'url'           => '%s/images/headers/mountains.png',
+			'thumbnail_url' => '%s/images/headers/mountains_thumbnail.png',
+			'description'   => _x( 'food', 'header image description', 'nisarg' )
+		),
+		'skyline' => array(
+			'url'           => '%s/images/headers/skyline.png',
+			'thumbnail_url' => '%s/images/headers/skyline_thumbnail.png',
+			'description'   => _x( 'buildings', 'header image description', 'nisarg' )
+		),
+		'sea' => array(
+			'url'           => '%s/images/headers/sea.png',
+			'thumbnail_url' => '%s/images/headers/sea_thumbnail.png',
+			'description'   => _x( 'Wood', 'header image description', 'nisarg' )
+		),
+		'food' => array(
+			'url'           => '%s/images/headers/food.png',
+			'thumbnail_url' => '%s/images/headers/food_thumbnail.png',
+			'description'   => _x( 'food', 'header image description', 'nisarg' )
+		),
+	) );
+} endif; // nisarg_custom_header_setup

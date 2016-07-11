@@ -55,7 +55,7 @@ class Intro_Widget extends WP_Widget {
 
     /**
      * @param array $instance
-     * @return string Default return is 'noform'.
+     * @return string
      */
     public function form($instance) {
         $title = !empty( $instance['title'] ) ? $instance['title'] : __( 'New title', 'text_domain' );
@@ -66,12 +66,12 @@ class Intro_Widget extends WP_Widget {
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
                    name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
-        <div>
+        <p>
             <label for="<?php echo esc_attr( $this->get_field_id( 'image_url' ) ); ?>"><?php _e( esc_attr( 'Image url:' ) ); ?></label>
-            <input class="widefat regular-text" id="<?php echo esc_attr( $this->get_field_id( 'image_url' ) ); ?>"
+            <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'image_url' ) ); ?>"
                    name="<?php echo esc_attr( $this->get_field_name( 'image_url' ) ); ?>" type="text" value="<?php echo esc_attr( $image_url ); ?>">
             <input type="button" name="upload-btn" id="upload-btn" class="button-secondary" value="Upload Image">
-        </div>
+        </p>
         <?php
     }
 
@@ -85,8 +85,12 @@ class Intro_Widget extends WP_Widget {
      *
      * @return array Updated safe values to be saved.
      */
-    public function update( $new_instance, $old_instance ) {
-        return $new_instance;
+    public function update($new_instance, $old_instance) {
+        $instance = $old_instance;
+        $instance['title'] = strip_tags($new_instance['title']);
+        $instance['image_url'] = strip_tags($instance['image_url']);
+        $this->flush_widget_cache();
+        return $instance;
     }
 
 }

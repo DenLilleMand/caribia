@@ -1,8 +1,7 @@
 <?php
 
 include_once('widgets/intro.php');
-
-
+require get_stylesheet_directory() . '/inc/custom-header.php';
 
 function caribia_enqueue_styles()
 {
@@ -15,6 +14,8 @@ function caribia_enqueue_styles()
     wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
 
 }
+
+
 
 function caribia_register_widgets() {
     register_widget('Intro_Widget');
