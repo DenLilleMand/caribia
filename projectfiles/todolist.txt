@@ -1,0 +1,5 @@
+1. Rykke menu punkter til højre(stadig indenfor container)
+2. Ændre titel i headeren til deres logo
+3. Fjerne den der hover effekt på teksten i midten af header billedet
+4. Fjerne de blokke ude til højre vi ikke har brug for
+5. 
