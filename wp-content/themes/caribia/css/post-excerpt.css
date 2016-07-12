@@ -31,6 +31,9 @@ div.vacation-type-image {
 .blog_post_info{
     text-align: left;
 }
+p.blog_info_photo_descri {
+    word-wrap: normal;
+}
 .entry-header .entry-meta::after{
     height: 0;
 }
