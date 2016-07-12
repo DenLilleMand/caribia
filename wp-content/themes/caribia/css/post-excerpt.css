@@ -13,16 +13,15 @@ div.vacation-type-image {
 .blog_post_container{
     margin-bottom: 20px;
 }
-.blog_post_info_container{
+.blog_post_info_container {
     border-left-style: solid;
 }
 
-.blog_tripeSeeker_photo img{
-    max-height: 100%;
-    max-width: 100%;
-    margin-bottom: 5px;
-
-}
+.blog_tripeSeeker_photo img {
+            max-height: 100%;
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
 .blog_info_photo_descri{
     text-align: center;font-size: 10px;
 }
