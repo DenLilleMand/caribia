@@ -47,6 +47,16 @@
     </div><!-- .entry-summary -->		   	
 
 	<footer class="entry-footer">
+		<div class="fb-share-button" data-href="<?php the_permalink(); ?>"
+			 data-layout="button_count"
+			 data-size="small"
+			 data-mobile-iframe="true">
+			<a class="fb-xfbml-parse-ignore"
+			   target="_blank"
+			   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
+				Del
+			</a>
+		</div>
 		<?php nisarg_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
