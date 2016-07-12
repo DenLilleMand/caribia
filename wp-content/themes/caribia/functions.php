@@ -11,6 +11,7 @@ function caribia_enqueue_styles()
     wp_enqueue_style('caribia-css', get_stylesheet_directory_uri() . '/css/caribia.css');
     wp_enqueue_style('fontawesome-css', get_stylesheet_directory_uri() . '/css/fontawesome/css/font-awesome.css');
     wp_enqueue_style('introwidget-css', get_stylesheet_directory_uri() . '/css/introwidget.css');
+    wp_enqueue_style('post-excerpt-css', get_stylesheet_directory_uri() . '/css/post-excerpt.css');
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'));
     wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
 }

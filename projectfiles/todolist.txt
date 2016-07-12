@@ -5,9 +5,6 @@
 5. Intro blok : billed - overskrift - beskrivelse - følg facebook
 6. Footer
 
-
-
-
 mandag:
 
 1.push + merge koden
@@ -15,14 +12,22 @@ mandag:
 3.Widget med billed(uploaded af admin) + facebook integration nederst + et par felter.
 4.Diskutere hvordan post ser ud + overveje hvordan man bedst linker {P:}
 
+---------------------------------------------------------
+Post styles/setup (Kig på rejsespejder for gode ideer)
+
+1. Synes godt om knap(Facebook)
+2. Del knap(Facebook)
+3. Vis tilbud -> som det næste skal vi overveje den side man kommer hen til her.
+4. Dele posten op i  3 sektioner: Tilbud(som titel), dato, kommentarere(link til tilbudet + #kommentarcontainer), kører med
+    symboler i posten, der viser om det er sommerferie, vinter ferie, by ferie, osv.
+---------------------------------------------------------
+Andre ideer:
+    -Nyhedsbrev.
+    -Mest populære rejser/tilbud.
+    -Få de sociale medier op i headeren, men hvor det stadig ser ordentligt ud.
+---------------------------------------------------------
 
 
 
-
-
---------------------------------------
-Post styles/setup:
-
-1.Kig på rejsespejder, gode ideer:
 
 

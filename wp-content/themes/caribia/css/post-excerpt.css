@@ -1,0 +1,12 @@
+header.entry-header {
+    padding: 0;
+}
+
+div.title {
+    padding: 0;
+}
+
+div.vacation-type-image {
+    padding: 0;
+    border-right: 4px solid #4b0438;
+}
