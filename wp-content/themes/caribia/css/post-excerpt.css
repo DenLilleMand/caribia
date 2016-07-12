@@ -1,29 +1,34 @@
 header.entry-header {
     padding: 0;
 }
-
 div.title {
     padding: 0;
 }
-
 div.vacation-type-image {
     padding: 0;
     border-right: 4px solid #4b0438;
 }
 .blog_post_container{
     margin-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.blog_post_info_container_col {
+    margin-bottom: 12px;
 }
 .blog_post_info_container {
     border-left-style: solid;
 }
-
 .blog_tripeSeeker_photo img {
             max-height: 100%;
             max-width: 100%;
             margin-bottom: 5px;
         }
 .blog_info_photo_descri{
-    text-align: center;font-size: 10px;
+    text-align: center;
+    font-size: 10px;
 }
 .blog_post_info_container_margin{
     margin-left: 20px;
@@ -31,14 +36,29 @@ div.vacation-type-image {
 .blog_post_info{
     text-align: left;
 }
-p.blog_info_photo_descri {
-    word-wrap: normal;
+div.blog_post_container {
+    border-bottom: 1px solid #ccc;
 }
+/** desværre p.blog_info_photo_descri {
+    word-wrap: normal;
+}*/
 .entry-header .entry-meta::after{
     height: 0;
 }
 .byline{
     display: none;
+}
+.entry-header, .entry-content, .entry-summary, .entry-footer {
+    padding: 0 1em;
+}
+div.facebook-button {
+    float: left;
+}
+div.offer-button {
+    float: right;
+}
+div.excerpt {
+    padding: 0;
 }
 @media (max-width: 990px) {
     .blog_post_info_container{

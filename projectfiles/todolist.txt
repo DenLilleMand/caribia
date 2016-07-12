@@ -19,7 +19,8 @@ Post styles/setup (Kig på rejsespejder for gode ideer)
 2. Del knap(Facebook)
 3. Vis tilbud -> som det næste skal vi overveje den side man kommer hen til her.
 4. Dele posten op i  3 sektioner: Tilbud(som titel), dato, kommentarere(link til tilbudet + #kommentarcontainer), kører med
-    symboler i posten, der viser om det er sommerferie, vinter ferie, by ferie, osv.
+    symboler i posten, der viser om det er sommerferie, vinter ferie, by ferie, osv.  Næste er et billed, så kommer teksten
+    med endnu en linje under og så står facebook deling ude til venstre nede i bunden og "Gå til tilbud" nede i højre side.
 ---------------------------------------------------------
 Andre ideer:
     -Nyhedsbrev.
@@ -30,6 +31,16 @@ Andre ideer:
 
 
 Når man er klikket ind på posten:
+
+
+
+
+
+
+
+
+----------------------------------------
+Gør siden mere spændende
 
 
 
