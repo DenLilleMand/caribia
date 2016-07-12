@@ -18,27 +18,26 @@
 
 
 	<header class="entry-header">
-		<div class="post-header">
+		<div class="post-header ">
 			<div class="container blog_post_container">
-				<div class="col-sm-1">
-					<div class="blog_tripeSeeker_photo">
-			<?php if( get_field('vacation_type_image') ): ?>
-				<img src="<?php the_field('vacation_type_image'); ?>" />
-			<?php endif; ?>
+				<div class="col-sm-1 blog_post_container_col">
+					<div class="blog_tripseeker_photo">
+						<?php if( get_field('vacation_type_image') ): ?>
+							<img src="<?php the_field('vacation_type_image'); ?>" />
+						<?php endif; ?>
+					</div>
 				</div>
-				</div>
-
 				<div class="col-sm-7">
 					<div class="blog_post_info_container">
 						<div class="blog_post_info_container_margin">
-				<span class="screen-reader-text"><?php the_title();?></span>
-				<?php if( is_single()) : ?>
-					<h1 class="entry-title blog_post_header"><?php the_title(); ?></h1>
-				<?php else : ?>
-					<h2 class="blog_post_info entry-title">
-						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-					</h2>
-				<?php endif; // is_single() ?>
+							<span class="screen-reader-text"><?php the_title();?></span>
+							<?php if( is_single()) : ?>
+								<h1 class="entry-title blog_post_header"><?php the_title(); ?></h1>
+							<?php else : ?>
+								<h2 class="blog_post_info entry-title">
+									<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+								</h2>
+							<?php endif; // is_single() ?>
 
 
 
@@ -60,6 +59,12 @@
     </div><!-- .entry-summary -->		   	
 
 	<footer class="entry-footer">
+		<div
+			class="fb-like"
+			data-share="false"
+			data-width="450"
+			data-show-faces="true">
+		</div>
 		<div class="fb-share-button" data-href="<?php the_permalink(); ?>"
 			 data-layout="button_count"
 			 data-size="small"

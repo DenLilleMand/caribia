@@ -20,10 +20,10 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<meta property="og:url"           content="http://localhost/caribia" />
-<meta property="og:type"          content="website" />
-<meta property="og:title"         content="Trip seeker" />
-<meta property="og:description"   content="Traveling blog" />
+<meta property="og:url"           content="<?php bloginfo('url');?>"/>
+<meta property="og:type"          content="Traveling blog" />
+<meta property="og:title"         content="<?php bloginfo('name'); ?>" />
+<meta property="og:description"   content="<?php bloginfo('description'); ?>" />
 <meta property="og:image"         content="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -70,13 +70,6 @@
           <?php } ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg"</img></a>
         </div>
-        <div
-            class="fb-like"
-            data-share="true"
-            data-width="450"
-            data-show-faces="true">
-        </div>
-
           <?php if ( has_nav_menu( 'primary' ) ) {
               nisarg_header_menu(); // main navigation 
             }
