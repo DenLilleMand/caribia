@@ -10,3 +10,26 @@ div.vacation-type-image {
     padding: 0;
     border-right: 4px solid #4b0438;
 }
+.blog_post_container{
+    margin-bottom: 20px;
+}
+.blog_post_info_container{
+    border-left-style: solid;
+}
+.blog_tripeSeeker_photo img{
+    max-height: 100%;
+    max-width: 100%
+
+}
+.blog_post_info_container_margin{
+    margin-left: 20px;
+}
+.blog_post_info{
+    text-align: left;
+}
+.entry-header .entry-meta::after{
+    height: 0;
+}
+.byline{
+    display: none;
+}

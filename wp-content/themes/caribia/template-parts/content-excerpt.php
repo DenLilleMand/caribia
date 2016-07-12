@@ -19,26 +19,39 @@
 
 	<header class="entry-header">
 		<div class="post-header">
-			<div class="vacation-type-image col-sm-2">
-				<img class="img-responsive" src="<?php the_field('vacation_type_image'); ?>" />
-			</div>
-			<div class="title col-sm-10">
+			<div class="container blog_post_container">
+				<div class="col-sm-1">
+					<div class="blog_tripeSeeker_photo">
+			<?php if( get_field('vacation_type_image') ): ?>
+				<img src="<?php the_field('vacation_type_image'); ?>" />
+			<?php endif; ?>
+				</div>
+				</div>
+
+				<div class="col-sm-7">
+					<div class="blog_post_info_container">
+						<div class="blog_post_info_container_margin">
 				<span class="screen-reader-text"><?php the_title();?></span>
 				<?php if( is_single()) : ?>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="entry-title blog_post_header"><?php the_title(); ?></h1>
 				<?php else : ?>
-					<h2 class="entry-title">
+					<h2 class="blog_post_info entry-title">
 						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 					</h2>
 				<?php endif; // is_single() ?>
-			</div>
-		</div>
+
+
 
 		<?php if ('post' == get_post_type()) : ?>
 		<div class="entry-meta">
-			<h5 class="entry-date"><?php nisarg_posted_on(); ?></h5>
+			<h5 class="blog_post_info entry-date"><?php nisarg_posted_on(); ?></h5>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
 	</header><!-- .entry-header -->
 		
     <div class="entry-summary">
