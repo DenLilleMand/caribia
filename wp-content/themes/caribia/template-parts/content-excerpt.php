@@ -20,7 +20,7 @@
 	<header class="entry-header">
 		<div class="post-header">
 			<div class="container blog_post_container">
-				<div class="col-sm-1">
+				<div class="col-sm-1 blog_post_container_col">
 					<div class="blog_tripeSeeker_photo">
 			<?php if( get_field('vacation_type_image') ): ?>
 				<img src="<?php the_field('vacation_type_image'); ?>" />
@@ -28,7 +28,7 @@
 				</div>
 				</div>
 
-				<div class="col-sm-7">
+				<div class="col-sm-7 blog_post_info_container_col">
 					<div class="blog_post_info_container">
 						<div class="blog_post_info_container_margin">
 				<span class="screen-reader-text"><?php the_title();?></span>
