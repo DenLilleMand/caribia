@@ -6,16 +6,7 @@
  */
 ?>
 
-<?php
-function image_side($side) {
-	if($side === 'left') {
 
-	} else {
-
-	}
-}
-
-?>
 
 
 <article id="post-<?php the_ID(); ?>"  <?php post_class('post-content'); ?>>
@@ -67,33 +58,16 @@ function image_side($side) {
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary row">
-		<div class="main-image col-sm-6">
-			<?php if( get_field('main_image') ): ?>
-				<img class="img-responsive" src="<?php the_field('main_image'); ?>" />
-			<?php endif; ?>
-		</div>
-		<div class="excerpt col-sm-6">
-			<?php the_excerpt(); ?>
-			<div class="excerpt-footer">
-				<div class="facebook-button">
-					<div class="fb-like"
-						data-share="true"
-						data-width="200"
-						data-show-faces="true">
-							<a class="fb-xfbml-parse-ignore"
-							   target="_blank"
-							   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">
-							</a>
-					</div>
-				</div>
-				<div class="offer-button">
-					<a class="btn btn-lg btn-success" href="<?php the_permalink(); ?>">
-						<i class="fa fa-plane fa-2x pull-left"></i> Læs mere . . .</a>
-				</div>
-			</div>
-		</div>
-	</div><!-- .entry-summary -->
+		<?php if( get_field('main_image_side') ): ?>
+			<?php
+			if(	get_field_object('main_image_side')['value'] == 'left') {
+				get_template_part( 'template-parts/content','excerpt-image-left');
+			} else {
+				get_template_part( 'template-parts/content','excerpt-image-right');
+			} ?>
+		<?php endif; ?>
 
+	</div><!-- .entry-summary -->
 	<!--<footer class="entry-footer">
 		<?php nisarg_entry_footer(); ?>
 	</footer> -->

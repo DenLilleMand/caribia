@@ -58,7 +58,7 @@ div.offer-button {
     float: right;
 }
 div.excerpt {
-    padding: 0;
+    padding: 15px 0 15px 0;
 }
 @media (max-width: 990px) {
     .blog_post_info_container{

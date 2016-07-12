@@ -7,15 +7,9 @@ ul#menu-main-menu {
 #navigation_menu_logo{
     padding: 0;
 }
-
-
 #footer_tripseeker_logo{
     margin-bottom: 50px;
 }
-
-
-
-
 @media (min-width: 768px) {
     .footer_social_media{
         margin-top: 56px;
