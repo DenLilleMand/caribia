@@ -20,7 +20,11 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-
+<meta property="og:url"           content="<?php bloginfo('url');?>"/>
+<meta property="og:type"          content="Traveling blog" />
+<meta property="og:title"         content="<?php bloginfo('name'); ?>" />
+<meta property="og:description"   content="<?php bloginfo('description'); ?>" />
+<meta property="og:image"         content="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -28,9 +32,29 @@
 </head>
  
 <body <?php body_class(); ?>>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '1141137052611786',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+</script>
+<!-- Starting real body -->
 <div id="page" class="hfeed site">
 <header id="masthead"  role="banner">
-  
+
 
     <nav class="navbar navbar-default navbar-fixed-top navbar-left" role="navigation"> 
       <!-- Brand and toggle get grouped for better mobile display --> 
@@ -45,9 +69,7 @@
           </button> 
           <?php } ?>
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg"</img></a>
-        </div> 
-        
-
+        </div>
           <?php if ( has_nav_menu( 'primary' ) ) {
               nisarg_header_menu(); // main navigation 
             }
