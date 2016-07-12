@@ -13,13 +13,16 @@ div.vacation-type-image {
 .blog_post_container{
     margin-bottom: 20px;
 }
-.blog_post_info_container{
+.blog_post_info_container {
     border-left-style: solid;
 }
-.blog_tripseeker_photo img{
-    max-height: 100%;
-    max-width: 100%
 
+.blog_post_container_col{
+    margin-top: 5%;
+}
+.blog_tripeSeeker_photo img{
+    width: 100%;
+    height: auto;
 }
 .blog_post_info_container_margin{
     margin-left: 20px;
@@ -32,4 +35,26 @@ div.vacation-type-image {
 }
 .byline{
     display: none;
+}
+@media (max-width: 990px) {
+    .blog_post_info_container{
+        border-left-style: none;
+    }
+    .blog_post_container_col{
+       display: none;
+
+    }
+    .blog_post_info_container_col{
+        padding-left: 0;
+    }
+    .blog_post_info{
+        text-align: left;
+    }
+    div .entry-summary{
+        padding-left: 15px;
+    }
+    .blog_post_info_container_margin
+    {
+        margin: 0;
+    }
 }

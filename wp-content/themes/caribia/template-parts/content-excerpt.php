@@ -19,40 +19,38 @@
 
 	<header class="entry-header">
 		<div class="post-header ">
-			<div class="container blog_post_container">
-				<div class="col-sm-1 blog_post_container_col">
-					<div class="blog_tripseeker_photo">
-						<?php if( get_field('vacation_type_image') ): ?>
-							<img src="<?php the_field('vacation_type_image'); ?>" />
-						<?php endif; ?>
-					</div>
-				</div>
-				<div class="col-sm-7">
-					<div class="blog_post_info_container">
-						<div class="blog_post_info_container_margin">
-							<span class="screen-reader-text"><?php the_title();?></span>
-							<?php if( is_single()) : ?>
-								<h1 class="entry-title blog_post_header"><?php the_title(); ?></h1>
-							<?php else : ?>
-								<h2 class="blog_post_info entry-title">
-									<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
-								</h2>
-							<?php endif; // is_single() ?>
-
-
-
-		<?php if ('post' == get_post_type()) : ?>
-		<div class="entry-meta">
-			<h5 class="blog_post_info entry-date"><?php nisarg_posted_on(); ?></h5>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-						</div>
-				</div>
-				</div>
+				<table>
+					<tbody>
+						<tr>
+							<td class="col-sm-1 blog_tripseeker_photo">
+									<?php if( get_field('vacation_type_image') ): ?>
+										<img src="<?php the_field('vacation_type_image'); ?>" />
+									<?php endif; ?>
+							</td>
+							<td class="col-sm-7">
+								<div class="">
+									<div class="">
+										<span class="screen-reader-text"><?php the_title();?></span>
+										<?php if( is_single()) : ?>
+											<h1 class="entry-title blog_post_header"><?php the_title(); ?></h1>
+										<?php else : ?>
+											<h2 class="blog_post_info entry-title">
+												<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+											</h2>
+										<?php endif; // is_single() ?>
+										<?php if ('post' == get_post_type()) : ?>
+											<div class="entry-meta">
+												<h5 class="blog_post_info entry-date"><?php nisarg_posted_on(); ?></h5>
+											</div><!-- .entry-meta -->
+										<?php endif; ?>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-		</div>
 	</header><!-- .entry-header -->
-		
     <div class="entry-summary">
 
         <?php the_excerpt(); ?>
