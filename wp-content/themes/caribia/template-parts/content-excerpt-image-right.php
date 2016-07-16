@@ -12,7 +12,7 @@
         <div class="facebook-button">
             <div class="fb-like"
                  data-share="true"
-                 data-width="200"
+                 data-width="500"
                  data-show-faces="true">
                 <a class="fb-xfbml-parse-ignore"
                    target="_blank"
