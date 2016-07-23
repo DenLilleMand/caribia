@@ -36,7 +36,7 @@
         a.innerHTML = '<xyz></xyz>';
         //if the hidden property is implemented we can assume, that the browser supports basic HTML5 Styles
         supportsHtml5Styles = ('hidden' in a);
-
+        
         supportsUnknownElements = a.childNodes.length == 1 || (function() {
           // assign a false positive if unable to shiv
           (document.createElement)('a');
@@ -135,7 +135,6 @@
         data = getExpandoData(ownerDocument);
     }
     var node;
-
     if (data.cache[nodeName]) {
         node = data.cache[nodeName].cloneNode();
     } else if (saveClones.test(nodeName)) {
@@ -151,6 +150,7 @@
     //   a 403 response, will cause the tab/window to crash
     // * Script elements appended to fragments will execute when their `src`
     //   or `text` property is set
+    console.log(node  + "First");
     return node.canHaveChildren && !reSkip.test(nodeName) && !node.tagUrn ? data.frag.appendChild(node) : node;
   }
 
@@ -175,6 +175,8 @@
     for(;i<l;i++){
         clone.createElement(elems[i]);
     }
+    console.log(clone  + "second");
+    
     return clone;
   }
 
