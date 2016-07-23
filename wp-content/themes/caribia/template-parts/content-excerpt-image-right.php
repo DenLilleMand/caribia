@@ -20,14 +20,11 @@
                 </a>
             </div>
         </div>
-        <div class="offer-button">
-            <a class="btn btn-lg btn-success" href="<?php the_permalink(); ?>">
-                <i class="fa fa-plane fa-2x pull-left"></i> Læs mere . . .</a>
-        </div>
+
     </div>
 </div>
 <div class="main-image col-sm-6">
-    <?php if( get_field('main_image') ): ?>
-        <img class="img-responsive" src="<?php the_field('main_image'); ?>" />
+    <?php if (get_field('main_image')): ?>
+        <img class="img-responsive" src="<?php the_field('main_image'); ?>"/>
     <?php endif; ?>
 </div>
