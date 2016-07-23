@@ -13,9 +13,7 @@
 
 get_header(); ?>
 
-	<div class="container">
-            <div class="row">
-                <div id="primary" class="col-md-9 content-area">
+	<div class="post-grid container">
 						<main id="main" class="site-main" role="main">
 
 						<?php if ( have_posts() ) : ?>
@@ -59,11 +57,6 @@ get_header(); ?>
 						<?php endif; ?>
 
 						</main><!-- #main -->
-				</div><!-- #primary -->
-
-				<?php get_sidebar('sidebar-1'); ?>
-			    </div><!--row-->      
-
 		</div><!--.container-->
 		<?php get_footer(); ?>
 
