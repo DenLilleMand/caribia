@@ -10,7 +10,7 @@ if ( ! function_exists( 'secondary_header_menu' ) ) :
         'theme_location'    => 'secondary',
         'depth'             => 2,
         'container'         => 'div',
-        'container_class'   => 'collapse navbar-collapse navbar-ex2-collapse',
+        'container_class'   => 'collapse navbar-collapse navbar-ex2-collapse col-md-4',
         'menu_class'        => 'nav navbar-nav pull-left',
         'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
         'walker'            => new wp_bootstrap_navwalker()

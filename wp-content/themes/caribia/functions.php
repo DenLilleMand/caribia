@@ -35,6 +35,7 @@ add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
 
 
 require get_stylesheet_directory() . '/inc/secondary-header.php';
+require get_stylesheet_directory() . '/inc/extras.php';
 
 
 function nisarg_setup() {
