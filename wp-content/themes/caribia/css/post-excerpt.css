@@ -212,6 +212,7 @@ blog_post_info {
 @media(max-width:500px){
  h2.blog_post_info {
         font-size: 7px;
+        /*TEST*/
     }
 
 }
