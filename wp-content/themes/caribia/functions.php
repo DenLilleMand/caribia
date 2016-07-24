@@ -16,6 +16,11 @@ function caribia_enqueue_styles()
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'));
     wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
 	wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
+	wp_enqueue_script('test_php_variables', get_stylesheet_directory_uri() . '/js/test_php_variables.js');
+	$dataToBePassed = array(
+  	  'image_url'            => bloginfo('stylesheet_directory') . "/images/logo.png"
+	);
+	wp_localize_script( 'test_php_variables', 'php_vars', $dataToBePassed );
 }
 
 
@@ -112,3 +117,4 @@ function nisarg_setup() {
 		'default-image' => '',
 	) ) );
 }
+
