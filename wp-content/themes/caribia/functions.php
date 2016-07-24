@@ -16,11 +16,11 @@ function caribia_enqueue_styles()
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'),9);
     wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
 	wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
-	wp_enqueue_script('test_php_variables', get_stylesheet_directory_uri() . '/js/test_php_variables.js');
+	wp_enqueue_script('insert_image_into_navbar-js', get_stylesheet_directory_uri() . '/js/insert_image_into_navbar.js');
 	$dataToBePassed = array(
-  	  'image_url'            => bloginfo('stylesheet_directory') . "/images/logo.png"
+  	  'image_url'            => get_stylesheet_directory_uri() . "/images/logo.png"
 	);
-	wp_localize_script( 'test_php_variables', 'php_vars', $dataToBePassed );
+	wp_localize_script( 'insert_image_into_navbar-js', 'php_vars', $dataToBePassed );
 }
 
 
