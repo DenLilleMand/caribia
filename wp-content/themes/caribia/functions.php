@@ -15,6 +15,7 @@ function caribia_enqueue_styles()
     wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'));
     wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
+    wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
 }
 
 
@@ -32,6 +33,81 @@ add_action('admin_enqueue_scripts', 'caribia_enqueue_styles');
 add_action('widgets_init', 'caribia_register_widgets');
 add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
 
-update_option( 'siteurl', 'localhost');
-update_option( 'home', 'localhost' );
+require get_stylesheet_directory() . '/inc/secondary-header.php';
+
+
+function nisarg_setup() {
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 * If you're building a theme based on Nisarg, use a find and replace
+	 * to change 'nisarg' to the name of your theme in all the template files
+	 */
+	load_theme_textdomain( 'nisarg', get_template_directory() . '/languages' );
+
+	// Add default posts and comments RSS feed links to head.
+	add_theme_support( 'automatic-feed-links' );
+
+	/*
+	 * Let WordPress manage the document title.
+	 * By adding theme support, we declare that this theme does not use a
+	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * provide it for us.
+	 */
+	add_theme_support( 'title-tag' );
+
+	/*
+	 * Enable support for Post Thumbnails on posts and pages.
+	 *
+	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+	 */
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 604, 270);
+	add_image_size( 'nisarg-full-width', 1038, 576, true );
+	
+	
+	function register_nisarg_menus() {
+		// This theme uses wp_nav_menu() in one location.
+		register_nav_menus( array(
+			'primary' => esc_html__( 'Top Primary Menu', 'nisarg' ),
+            'secondary' => esc_html__('Top Secondary Menu', 'nisarg')
+		) );
+	}
+
+	add_action( 'init', 'register_nisarg_menus' );
+	
+	
+	/*
+	 * Switch default core markup for search form, comment form, and comments
+	 * to output valid HTML5.
+	 */
+	add_theme_support( 'html5', array(
+		'search-form',
+		'comment-form',
+		'comment-list',
+		'gallery',
+		'caption',
+	) );
+
+	
+	/*
+	 * Enable support for Post Formats.
+	 * See http://codex.wordpress.org/Post_Formats
+	 */
+	add_theme_support( 'post-formats', array(
+		'aside',
+		'image',
+		'video',
+		'quote',
+		'link',
+		'gallery'
+	) );
+
+	
+	// Set up the WordPress core custom background feature.
+	add_theme_support( 'custom-background', apply_filters( 'nisarg_custom_background_args', array(
+		'default-color' => 'f5f5f5',
+		'default-image' => '',
+	) ) );
+}
 

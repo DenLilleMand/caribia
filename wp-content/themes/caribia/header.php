@@ -59,7 +59,6 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-left" role="navigation"> 
       <!-- Brand and toggle get grouped for better mobile display --> 
       <div class="container" id="navigation_menu">
-        <div class="navbar-header"> 
           <?php if ( has_nav_menu( 'primary' ) ) { ?>
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> 
             <span class="sr-only">Toggle navigation</span> 
@@ -68,25 +67,47 @@
             <span class="icon-bar"></span> 
           </button> 
           <?php } ?>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg"</img></a>
-        </div>
+        
           <?php if ( has_nav_menu( 'primary' ) ) {
               nisarg_header_menu(); // main navigation 
             }
           ?>
-        
+        <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/logo.png"</img></a>
+          <?php if ( has_nav_menu( 'secondary' ) ) { ?>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse"> 
+            <span class="sr-only">Toggle navigation</span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+            <span class="icon-bar"></span> 
+          </button> 
+          <?php } ?>
+          <?php if ( has_nav_menu( 'secondary' ) ) {
+                 secondary_header_menu(); // secondary navigation 
+            }
+          ?>
       </div><!--#container-->
     </nav>
 
   <div id="cc_spacer"></div><!-- used to clear fixed navigation by the themes js --> 
-  
-  <div class="site-header">
-      <div class="site-branding">
-          <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-          <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-      </div><!--.site-branding-->
-  </div><!--.site-header--> 
-</header>    
+
+ <!-- Adding some php code that checks the page. ?? problem is to get the post information. here. Problem with it ,
+              is that noone is going to look for conditional logic like that in the header.    -->
+    <?php if(is_single() && !is_front_page()) { ?>
+          <div class="post-header">
+          	<?php if( get_field('main_image_content') ): ?>
+			    <img class="img-responsive " src="<?php the_field('main_image_content'); ?>" />
+		    <?php endif; ?>
+        </div><!--.site-header--> 
+    <?php } else { ?>
+        <div class="site-header">
+            <div class="site-branding">
+                <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+                <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+            </div><!--.site-branding-->
+        </div><!--.site-header--> 
+<?php } ?>
+ 
+</header>   
 
 <div id="content" class="site-content">
     

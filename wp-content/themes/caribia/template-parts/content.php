@@ -4,11 +4,14 @@
  *
  * @package Nisarg
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>"  <?php post_class('post-content'); ?>>
-
+	<div class="main-image">
+		<?php if( get_field('main_image') ): ?>
+			<img class="img-responsive " src="<?php the_field('main_image'); ?>" />
+		<?php endif; ?>
+	</div>
 	<?php
 	if ( is_sticky() && is_home() && ! is_paged() ) {
 		printf( '<span class="sticky-post">%s</span>', __( 'Featured', 'nisarg' ) );
@@ -16,10 +19,8 @@
 
 	<?php nisarg_featured_image_disaplay(); ?>
 	
-	<header class="entry-header herpderp">
-	
+	<header class="entry-header">
 		<span class="screen-reader-text"><?php the_title();?></span>
-
 		<?php if ( is_single() ) : ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		<?php else : ?>
@@ -47,7 +48,7 @@
 					) );
 				?>
 			</div><!-- .entry-content -->
-
+				
 	<footer class="entry-footer">
 		<?php nisarg_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
