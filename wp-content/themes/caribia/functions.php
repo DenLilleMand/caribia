@@ -15,6 +15,7 @@ function caribia_enqueue_styles()
     wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
     wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'));
     wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
+	wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
 }
 
 
