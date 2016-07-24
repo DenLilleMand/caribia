@@ -1,6 +1,6 @@
-ul#menu-main-menu {
+/*ul#menu-main-menu {
     float: right;
-}
+}*/
 #navigation_menu{
     margin-top: 20px;
 }
@@ -10,6 +10,37 @@ ul#menu-main-menu {
 #footer_tripseeker_logo{
     margin-bottom: 50px;
 }
+#navbar-logo{
+padding: 11px 0px 11px 15px;
+
+}
+.vertically_aligned {
+
+    /* older webkit */
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+
+    /* older firefox */
+    display: -moz-box;
+    -moz-box-align: center;
+    -moz-box-pack: center;
+
+    /* IE10*/
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+
+    /* newer webkit */
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-box-pack: center;
+
+    /* Standard Form - IE 11+, FF 22+, Chrome 29+, Opera 17+ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media (min-width: 768px) {
     .footer_social_media{
         margin-top: 56px;
@@ -18,11 +49,15 @@ ul#menu-main-menu {
 }
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-    #navigation_menu_logo{
+    /*#navigation_menu_logo{
         padding-left: 20px;
+    }*/
+    #navbar-logo {
+       display: none;
+        /*TEST*/
     }
-    ul#menu-main-menu {
-        float: left;
+    .navbar-collapse{
+        float:left;  
     }
     }
 

@@ -71,9 +71,7 @@
               nisarg_header_menu(); // main navigation 
             }
           ?>
-          <div class="col-md-4 header-logo-container"> 
-                 <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand float-none" src="<?php bloginfo('stylesheet_directory')?>/images/logo.png"</img></a>
-            </div>
+        
       </div><!--#container-->
     </nav>
   <div id="cc_spacer"></div><!-- used to clear fixed navigation by the themes js --> 
