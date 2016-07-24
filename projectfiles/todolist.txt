@@ -41,7 +41,7 @@ Når man er klikket ind på posten:
 
 ----------------------------------------
 
-
+site image: husk at lave baggrunden transparent
 
 
 

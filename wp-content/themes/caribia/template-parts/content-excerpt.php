@@ -22,7 +22,6 @@
 			<img src="<?php the_field('vacation_type_image');  ?>" class="post-vacation-type" />
 		<?php endif; ?>
 	<header class="entry-header">
-	
 		<div class="post-header">
 				<div class="row blog_post_container">
 					<div class="col-sm-12 blog_post_info_container_col">
