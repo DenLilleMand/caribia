@@ -6,7 +6,8 @@
  */
 ?>
 
-<article  id="post-<?php the_ID(); ?>"  <?php post_class('col-md-4 aeffect'); ?>  onclick="getBlogPost('<?php the_permalink();?>')">
+<div class="aeffect">
+<article  id="post-<?php the_ID(); ?>"  <?php post_class('col-md-4'); ?>  style="cursor:pointer" onclick="getBlogPost('<?php the_permalink();?>')">
 
 	<?php
 	if (is_sticky() && is_home() && ! is_paged()) {
