@@ -54,8 +54,6 @@
 <!-- Starting real body -->
 <div id="page" class="hfeed site">
 <header id="masthead"  role="banner">
-
-
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
       <!-- Brand and toggle get grouped for better mobile display --> 
       <div class="container" id="navigation_menu">
@@ -79,6 +77,7 @@
           <div class="post-header">
           	<?php if( get_field('main_image_content') ): ?>
 			    <img class="img-responsive " src="<?php the_field('main_image_content'); ?>" />
+                <h2>A Movie in the Park:<br />Kung Fu Panda</h2>
 		    <?php endif; ?>
         </div><!--.site-header--> 
     <?php } else { ?>

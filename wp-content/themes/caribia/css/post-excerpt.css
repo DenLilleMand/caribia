@@ -94,12 +94,6 @@ article{
     filter: alpha(opacity=50);
     
 }
-.img-responsive {
-    padding: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0;
-    cursor: pointer;
-}
 
 .entry-header,
 .entry-content,
