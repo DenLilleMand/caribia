@@ -92,7 +92,7 @@ div.blog_post_container {
 }
 article{
    opacity: 1;
-    filter: alpha(opacity=50);
+   filter: alpha(opacity=50);
     
 }
 
@@ -119,13 +119,13 @@ div.excerpt {
         padding:0 0 15px 0
 }
 
-article.type-post.aeffect {
+article.type-post {
     position: relative;
     background-color: #FFF;
     width: 32%;
     margin-right: 0.6533%;
     margin-left: 0.6533%;
-    padding: 0;
+    padding: 15px;
 }
 
 div.container.post-grid {

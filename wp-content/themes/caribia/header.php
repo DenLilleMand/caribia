@@ -77,7 +77,9 @@
           <div class="post-header">
           	<?php if( get_field('main_image_content') ): ?>
 			    <img class="img-responsive " src="<?php the_field('main_image_content'); ?>" />
-                <h2>A Movie in the Park:<br />Kung Fu Panda</h2>
+                <div class="text-container">
+                    <h2>Travel<br />Better. </br> Cheaper. </br>Longer.</h2>
+                </div>
 		    <?php endif; ?>
         </div><!--.site-header--> 
     <?php } else { ?>

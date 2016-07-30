@@ -16,14 +16,12 @@
     margin-bottom: 50px;
 }
 #navbar-logo{
-padding: 11px 0px 11px 15px;
-
+    padding: 11px 0px 11px 15px;
 }
  
 @media (min-width: 768px) {
     .footer_social_media{
         margin-top: 56px;
-
     }
 }
 /* Small devices (tablets, 768px and up) */
@@ -38,7 +36,7 @@ padding: 11px 0px 11px 15px;
     .navbar-collapse{
         float:left;  
     }
-    }
+}
 
 
 

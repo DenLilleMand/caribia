@@ -7,7 +7,7 @@
 }	
 
 #navigation_menu_logo {
-	height: 100px;	
+	height: 50px;
 }
 
 .header-logo-container {
@@ -15,5 +15,17 @@
 }
 
 div#cc_spacer {
-	height:146px;
+	height:58px !important;
 }
+
+
+li#navbar-logo {
+	padding: 0;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+li#navbar-logo a {
+	padding: 0;
+}
+
