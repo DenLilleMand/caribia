@@ -6,7 +6,6 @@
  */
 ?>
 
-<div class="aeffect">
 <article  id="post-<?php the_ID(); ?>"  <?php post_class('col-md-4'); ?>  style="cursor:pointer" onclick="getBlogPost('<?php the_permalink();?>')">
 
 	<?php

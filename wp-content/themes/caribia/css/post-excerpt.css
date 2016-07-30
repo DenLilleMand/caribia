@@ -86,11 +86,10 @@ div.blog_post_container {
 .post-grid {
     background-color: #ddd;
 }
-.aeffect :hover{
-    background-color:lightblue;;
-    
+div.post-grid article:hover{
+    background-color:lightblue !important;
 }
-article{
+article {
    opacity: 1;
    filter: alpha(opacity=50);
     
