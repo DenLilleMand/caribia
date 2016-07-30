@@ -57,8 +57,8 @@ get_header(); ?>
 						<?php endif; ?>
 
 						</main><!-- #main -->
+					
 		</div><!--.container-->
-		<?php get_footer(); ?>
-
-			
+		
+		<?php get_footer(); ?>	
     

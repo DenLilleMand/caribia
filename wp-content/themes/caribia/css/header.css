@@ -1,5 +1,15 @@
 #navigation_menu {
-	width: 100%;	
+	
 }
 
+.float-none {
+	float: none;
+}	
 
+#navigation_menu_logo {
+	height: 100px;	
+}
+
+.header-logo-container {
+	text-align:center;	
+}

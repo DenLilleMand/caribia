@@ -56,7 +56,7 @@
 <header id="masthead"  role="banner">
 
 
-    <nav class="navbar navbar-default navbar-fixed-top navbar-left" role="navigation"> 
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"> 
       <!-- Brand and toggle get grouped for better mobile display --> 
       <div class="container" id="navigation_menu">
           <?php if ( has_nav_menu( 'primary' ) ) { ?>
@@ -67,31 +67,14 @@
             <span class="icon-bar"></span> 
           </button> 
           <?php } ?>
-        
           <?php if ( has_nav_menu( 'primary' ) ) {
               nisarg_header_menu(); // main navigation 
             }
           ?>
-        <a class="header-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="navigation_menu_logo" class="navbar-brand" src="<?php bloginfo('stylesheet_directory')?>/images/logo.png"</img></a>
-          <?php if ( has_nav_menu( 'secondary' ) ) { ?>
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse"> 
-            <span class="sr-only">Toggle navigation</span> 
-            <span class="icon-bar"></span> 
-            <span class="icon-bar"></span> 
-            <span class="icon-bar"></span> 
-          </button> 
-          <?php } ?>
-          <?php if ( has_nav_menu( 'secondary' ) ) {
-                 secondary_header_menu(); // secondary navigation 
-            }
-          ?>
+        
       </div><!--#container-->
     </nav>
-
   <div id="cc_spacer"></div><!-- used to clear fixed navigation by the themes js --> 
-
- <!-- Adding some php code that checks the page. ?? problem is to get the post information. here. Problem with it ,
-              is that noone is going to look for conditional logic like that in the header.    -->
     <?php if(is_single() && !is_front_page()) { ?>
           <div class="post-header">
           	<?php if( get_field('main_image_content') ): ?>

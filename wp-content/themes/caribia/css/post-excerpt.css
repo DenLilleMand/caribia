@@ -124,7 +124,7 @@ div.excerpt {
         padding:0 0 15px 0
 }
 
-article.type-post {
+article.type-post.aeffect {
     position: relative;
     background-color: #FFF;
     width: 32%;
@@ -212,6 +212,7 @@ blog_post_info {
 @media(max-width:500px){
  h2.blog_post_info {
         font-size: 7px;
+        /*TEST*/
     }
 
 }
