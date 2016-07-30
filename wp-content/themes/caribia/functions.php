@@ -5,27 +5,25 @@ require get_stylesheet_directory() . '/inc/custom-header.php';
 
 function caribia_enqueue_styles()
 {
-    $parent_style = 'parent-style';
-    wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
-    wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array($parent_style));
-    wp_enqueue_style('caribia-css', get_stylesheet_directory_uri() . '/css/caribia.css');
-    wp_enqueue_style('fontawesome-css', get_stylesheet_directory_uri() . '/css/fontawesome/css/font-awesome.css');
-    wp_enqueue_style('introwidget-css', get_stylesheet_directory_uri() . '/css/introwidget.css');
-    wp_enqueue_style('post-excerpt-css', get_stylesheet_directory_uri() . '/css/post-excerpt.css');
-    wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
-    wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'),9);
-    wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
-	wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
-	wp_enqueue_style('post-css', get_stylesheet_directory_uri() . '/css/post.css');
-	wp_enqueue_script('insert_image_into_navbar-js', get_stylesheet_directory_uri() . '/js/insert_image_into_navbar.js');
-	wp_enqueue_style('nisarg-overwrite-css',get_stylesheet_directory_uri() . '/css/nisarg-overwrites.css');
-	$dataToBePassed = array(
-  	  'image_url'            => get_stylesheet_directory_uri() . "/images/logo.png"
-	);
-	wp_localize_script( 'insert_image_into_navbar-js', 'php_vars', $dataToBePassed );
+  $parent_style = 'parent-style';
+  wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
+  wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array($parent_style));
+  wp_enqueue_style('caribia-css', get_stylesheet_directory_uri() . '/css/caribia.css');
+  wp_enqueue_style('fontawesome-css', get_stylesheet_directory_uri() . '/css/fontawesome/css/font-awesome.css');
+  wp_enqueue_style('introwidget-css', get_stylesheet_directory_uri() . '/css/introwidget.css');
+  wp_enqueue_style('post-excerpt-css', get_stylesheet_directory_uri() . '/css/post-excerpt.css');
+  wp_enqueue_style('footer-css', get_stylesheet_directory_uri() . '/css/footer/css/footer-distributed-with-address-and-phones.css');
+  wp_enqueue_script('caribia-js', get_stylesheet_directory_uri() . '/js/caribia.js', array('jquery'),9);
+  wp_enqueue_script('facebook-sdk-js', get_stylesheet_directory_uri() . '/js/facebook-sdk.js');
+  wp_enqueue_style('header-css', get_stylesheet_directory_uri() . '/css/header.css');
+  wp_enqueue_style('post-css', get_stylesheet_directory_uri() . '/css/post.css');
+  wp_enqueue_script('insert_image_into_navbar-js', get_stylesheet_directory_uri() . '/js/insert_image_into_navbar.js');
+  wp_enqueue_style('nisarg-overwrite-css',get_stylesheet_directory_uri() . '/css/nisarg-overwrites.css');
+  $dataToBePassed = array(
+    'image_url'            => get_stylesheet_directory_uri() . "/images/logo.png"
+  );
+  wp_localize_script( 'insert_image_into_navbar-js', 'php_vars', $dataToBePassed );
 }
-
-
 
 function caribia_register_widgets() {
     register_widget('Intro_Widget');
@@ -39,7 +37,6 @@ add_action('wp_enqueue_scripts', 'caribia_enqueue_styles', 12);
 add_action('admin_enqueue_scripts', 'caribia_enqueue_styles');
 add_action('widgets_init', 'caribia_register_widgets');
 add_action( 'admin_enqueue_scripts', 'load_wp_media_files' );
-
 
 
 function nisarg_setup() {
