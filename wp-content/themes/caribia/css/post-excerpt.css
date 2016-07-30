@@ -119,7 +119,7 @@ div.excerpt {
         padding:0 0 15px 0
 }
 
-article.type-post {
+div.post-grid article.type-post {
     position: relative;
     background-color: #FFF;
     width: 32%;
@@ -244,7 +244,7 @@ div.blog_post_container {
         min-height: 100px;
         max-height: 100px;
     }
-    article.type-post {
+    div.post-grid article.type-post {
         width: 100%;
         padding: 5px;
         margin-right: 0%;
