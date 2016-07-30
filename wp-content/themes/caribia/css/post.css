@@ -1,0 +1,30 @@
+@import './fonts.css';
+
+article.post-content div.entry-meta {
+    position: relative;
+    left: 0;
+    bottom: inherit;
+}
+
+div.single-post {
+    margin-top: 12px;
+}
+
+div.post-header {
+    position: relative;
+}
+
+div.post-header div.text-container {
+    position: absolute;
+    width: 100%;
+    top: 24px;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+div.post-header div.text-container h2 {
+    font-family: rubik-bold;
+    font-size: 3em;
+    text-transform: uppercase;
+}

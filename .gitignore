@@ -3,5 +3,5 @@
 !.gitignore
 
 wp-config.php
-
+.vscode
 .idea

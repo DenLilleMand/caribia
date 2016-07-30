@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div class="container herpderp">
+	<div class="container single-post">
         <div class="row">
 			<div id="primary" class="col-md-9 content-area">
 				<main id="main" role="main">

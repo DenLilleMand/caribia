@@ -5,8 +5,9 @@
  * @package Nisarg
  */
 ?>
+
 <div class="aeffect">
-<article  id="post-<?php the_ID(); ?>"  <?php post_class('col-md-4 aeffect'); ?>  style="cursor:pointer" onclick="getBlogPost('<?php the_permalink();?>')">
+<article  id="post-<?php the_ID(); ?>"  <?php post_class('col-md-4'); ?>  style="cursor:pointer" onclick="getBlogPost('<?php the_permalink();?>')">
 
 	<?php
 	if (is_sticky() && is_home() && ! is_paged()) {
@@ -57,8 +58,7 @@
 				</div>	
 		</div>
 	</div><!-- .entry-summary -->
-	
-	
+
+
 </article>
 <!-- #post-## -->
-</div>

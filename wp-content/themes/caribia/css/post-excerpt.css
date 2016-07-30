@@ -57,6 +57,7 @@ h2.blog_post_info {
 
 div.blog_post_container {
     border-bottom: 1px solid #ccc;
+    height:120px;
 }
 
 .entry-summary {
@@ -91,14 +92,8 @@ div.blog_post_container {
 }
 article{
    opacity: 1;
-    filter: alpha(opacity=50);
+   filter: alpha(opacity=50);
     
-}
-.img-responsive {
-    padding: 10px;
-    margin-bottom: 0px;
-    padding-bottom: 0;
-    cursor: pointer;
 }
 
 .entry-header,
@@ -124,13 +119,13 @@ div.excerpt {
         padding:0 0 15px 0
 }
 
-article.type-post.aeffect {
+article.type-post {
     position: relative;
     background-color: #FFF;
     width: 32%;
     margin-right: 0.6533%;
     margin-left: 0.6533%;
-    padding: 0;
+    padding: 15px;
 }
 
 div.container.post-grid {
@@ -154,7 +149,7 @@ img.post-vacation-type {
 
 div.main-image img {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 h2.entry-title {
@@ -172,7 +167,7 @@ div.blog_post_container {
 
 .excerpt>p,
 .blog-info-maintitle,
-blog_post_info {
+.blog_post_info {
     font-style: oblique;
 }
 /*@media (min-width: 1500px) {
@@ -192,28 +187,31 @@ blog_post_info {
     font-size:10px;
     }
 }*/
-@media (max-width: 1500px) {
+@media (max-width: 1560px) {
     div.excerpt {
         font-size: 75%;
         margin-top:0%;
         padding:0 0 15px 0
     }
     h2.blog_post_info {
-        font-size: 10px;
+        font-size: 12px;
     }
     .blog-info-maintitle {
         font-size: 10px;
     }
-    .blog_post_container {
-    height: 110px;
+    div.blog_post_container {
+    height: 120px;
     font-size:10px;
 }
 }
 @media(max-width:500px){
  h2.blog_post_info {
-        font-size: 7px;
+        font-size: 8px;
+        margin-top:10px;
+        margin-bottom: 10px;
         /*TEST*/
     }
+    
 
 }
 @media (max-width: 990px) {
@@ -225,6 +223,12 @@ blog_post_info {
         margin-top: 0;
         margin-right: 0;
     }
+    /*.aeffect{
+         width: 100%;
+        padding: 5px;
+        margin-right: 0%;
+        margin-left: 0%;
+    }*/
        .blog-info-maintitle {
         font-size: 8px;
     }
@@ -250,7 +254,7 @@ blog_post_info {
         border-left-style: none;
         padding-left: 10px;
     }
-    .blog_post_container {
+    div.blog_post_container {
         height: 75px;
         margin-bottom: 10px;
     }
@@ -261,12 +265,12 @@ blog_post_info {
         padding-left: 0;
     }
     .blog_post_info {
-        font-size: 8px;
+        font-size: 10px;
         text-align: left;
     }
     div .entry-summary {
         padding-left: 15px;
-        min-height: auto;
+        height: auto;
     }
     .blog_post_info_container_margin {
         margin: 0;
