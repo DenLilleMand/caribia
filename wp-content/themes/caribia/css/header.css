@@ -68,3 +68,24 @@ img#navigation_menu_logo {
 	margin-left: 0;
 }
 
+ul#menu-main-menu {
+	background-color: 	#292c2f;
+}
+
+
+/**Mobile devices */
+@media(max-width:768px){
+	ul#menu-main-menu {
+		background-color: 	#292c2f;
+	}
+
+	ul#menu-main-menu li a {
+		border-top: none;
+		border-bottom: none;
+	}
+
+	.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+		border: none;
+		box-shadow: none;
+	}
+}

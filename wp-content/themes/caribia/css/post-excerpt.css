@@ -203,16 +203,7 @@ div.blog_post_container {
     font-size:10px;
 }
 }
-@media(max-width:500px){
- h2.blog_post_info {
-        font-size: 8px;
-        margin-top:10px;
-        margin-bottom: 10px;
-        /*TEST*/
-    }
-    
 
-}
 @media (max-width: 990px) {
     img.post-vacation-type {
         display: inline-block;
@@ -228,10 +219,10 @@ div.blog_post_container {
         margin-right: 0%;
         margin-left: 0%;
     }*/
-       .blog-info-maintitle {
+    .blog-info-maintitle {
         font-size: 8px;
     }
-    
+
     .type-post{
         height: auto;
     }
@@ -283,5 +274,18 @@ div.blog_post_container {
     .site-footer{
         margin-top:0px;
     }
-   
+
+}
+
+
+
+@media(max-width:500px){
+ h2.blog_post_info {
+        font-size: 8px;
+        margin-top:10px;
+        margin-bottom: 10px;
+        /*TEST*/
+    }
+    
+
 }
