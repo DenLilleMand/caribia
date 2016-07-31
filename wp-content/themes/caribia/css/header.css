@@ -1,3 +1,5 @@
+@import './fonts.css';
+
 .header-logo-container {
 	text-align:center;
 }
@@ -49,6 +51,7 @@ ul#menu-main-menu li a:hover {
 
 ul#menu-main-menu li a {
 	color: #FFF;
+	font-family: rubik-bold
 }
 
 ul#menu-main-menu {
