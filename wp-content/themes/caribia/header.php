@@ -24,7 +24,7 @@
 <meta property="og:type"          content="Traveling blog" />
 <meta property="og:title"         content="<?php bloginfo('name'); ?>" />
 <meta property="og:description"   content="<?php bloginfo('description'); ?>" />
-<meta property="og:image"         content="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogo.jpg" />
+<meta property="og:image"         content="<?php bloginfo('stylesheet_directory')?>/images/logo.png" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 

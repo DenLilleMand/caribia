@@ -15,7 +15,7 @@ g<?php
 			<div class="container">
 	<div class="col-md-4">
 <div class="margin_mobile">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="footer_tripseeker_logo" src="<?php bloginfo('stylesheet_directory')?>/images/tripseekerlogowhite.png"</img></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img id="footer_tripseeker_logo" src="<?php bloginfo('stylesheet_directory')?>/images/logo.png"</img></a>
 				<p class="footer-company-name">© 2016 by tripseeker - by W&R</p>
 </div>
 </div>
