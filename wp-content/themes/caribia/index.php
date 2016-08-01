@@ -33,11 +33,12 @@ get_header(); ?>
 							 */
 							$count = 1;
 							$POSTS_PER_PAGE = 6;
+
 							while(have_posts()) : the_post();
 							?>
 
 								<?php
-									if($count == 1 || $count == 4 || $count == 7 || $count == 10) { ?>
+									if($count == 1 || ($count-1) % 3 == 0) { ?>
 										<div class="row post-grid-row">
 									<?php }
 									/*
@@ -56,7 +57,7 @@ get_header(); ?>
 		        					}
 									$count_posts = wp_count_posts('post','readable');
 									$published_posts = $count_posts->publish;
-									if($count == $published_posts || $count % 3 == 0) { ?>
+									if($count == sizeof($posts) || $count % 3 == 0) { ?>
 										</div>
 									<?php }
 									$count++;

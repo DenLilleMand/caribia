@@ -52,6 +52,8 @@ Todo:
 9. Sæt redmine op.
 10. Wrap 3 posts i en row af gangen.
 11. Opret 4 posts mere.
+12. Alle posts deler den samme facebook integration lige nu, det er selvfølgelig rimelig dumt, spørgsmålet er om hver post,
+    skal kobles til et opslag på facebook, eller hvordan man gør det.
 
 
 
