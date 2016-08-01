@@ -24,11 +24,22 @@ get_header(); ?>
 								</header>
 							<?php endif; ?>
 
-							<?php /* Start the Loop */ ?>
-							<?php while(have_posts()) : the_post(); ?>
+							<?php
+							/**
+							 * count = 1,   if(count = 1) {div class="row"}
+							 * if (count % 3 = 0) { end div. Start new div }
+							 * if(count = last post) { end div }
+							 *
+							 */
+							$count = 1;
+							$POSTS_PER_PAGE = 6;
+							while(have_posts()) : the_post();
+							?>
 
 								<?php
-
+									if($count == 1 || $count == 4 || $count == 7 || $count == 10) { ?>
+										<div class="row post-grid-row">
+									<?php }
 									/*
 									 * If you want to disaplay only excerpt, file content-excerpt.php will be used.
 									 * Include the Post-Format-specific template for the content.
@@ -37,12 +48,18 @@ get_header(); ?>
 									 */
 									$post_display_option = get_theme_mod('post_display_option','post-excerpt');
 									
-		    						if($post_display_option == 'post-excerpt'){
+		    						if($post_display_option == 'post-excerpt') {
 		        						get_template_part( 'template-parts/content','excerpt');
 		        					}
-		        					else{
+		        					else {
 		        						get_template_part( 'template-parts/content', get_post_format() );
 		        					}
+									$count_posts = wp_count_posts('post','readable');
+									$published_posts = $count_posts->publish;
+									if($count == $published_posts || $count % 3 == 0) { ?>
+										</div>
+									<?php }
+									$count++;
 									
 								?>
 

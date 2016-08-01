@@ -27,16 +27,7 @@ Andre ideer:
     -Mest populære rejser/tilbud.
     -Få de sociale medier op i headeren, men hvor det stadig ser ordentligt ud.
 ---------------------------------------------------------
-
-
-
 Når man er klikket ind på posten:
-
-
-
-
-
-
 
 
 ----------------------------------------
@@ -44,7 +35,23 @@ Når man er klikket ind på posten:
 site image: husk at lave baggrunden transparent
 
 
+-----------------------------------------
 
+Todo:
+1. Indsætte en simpel newsletter form på siden, og få det til at virke.
+2. Lave en større bracket af med newsletter, måske ligesom den på matt the nomad, på forsiden,
+        -Finde ud af hvordan man tilføjer en pager til blogsne
+            sådan at der kan være 6 blogs, Cover den sektion med det der billed.
+        -Så jeg burde erklærer et widget område, til en større newsletter blok.
+3. lave en recent post widget og fjerne det fra under posten.
+4. Søge funktion på hjemmesiden
+5. Kigge på hvordan blog posten bliver fremstillet evt. se hvordan man kan gøre den lidt mere indbydende.
+6. Stærkt overveje headeren på den enkelte blog side.
+7. Fixe sådan at logoet i headeren linker til forsiden.
+8. Sætte jenkins op.
+9. Sæt redmine op.
+10. Wrap 3 posts i en row af gangen.
+11. Opret 4 posts mere.
 
 
 

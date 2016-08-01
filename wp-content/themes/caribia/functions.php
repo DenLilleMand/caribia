@@ -20,7 +20,8 @@ function caribia_enqueue_styles()
   wp_enqueue_script('insert_image_into_navbar-js', get_stylesheet_directory_uri() . '/js/insert_image_into_navbar.js');
   wp_enqueue_style('nisarg-overwrite-css',get_stylesheet_directory_uri() . '/css/nisarg-overwrites.css');
   $dataToBePassed = array(
-    'image_url'            => get_stylesheet_directory_uri() . "/images/logo.png"
+    'image_url' => get_stylesheet_directory_uri() . "/images/logo.png",
+	'frontpage_url' => get_home_url()
   );
   wp_localize_script( 'insert_image_into_navbar-js', 'php_vars', $dataToBePassed );
 }

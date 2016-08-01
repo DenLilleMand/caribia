@@ -84,7 +84,8 @@ div.blog_post_container {
 }
 
 .post-grid {
-    background-color: #ddd;
+    background-image: url('../images/mountain_background.jpg');
+    background-repeat: repeat;
 }
 div.post-grid article:hover{
     background-color:lightblue !important;
